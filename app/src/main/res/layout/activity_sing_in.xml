@@ -56,7 +56,7 @@ android:textSize="30dp"
 
         <Button
             android:layout_margin="15dp"
-            android:text="Signup"
+            android:text="Sign in"
             android:textStyle="bold"
             android:textColor="#000000"
             android:id="@+id/btnSingin"

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,78 +10,135 @@
         android:id="@+id/textViewID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="TextView"
+        android:hint="ID"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="51dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/texthiddenID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_alignBaseline="@+id/textviewrepoter"
-        android:layout_alignBottom="@+id/textviewrepoter"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="38dp"
-        android:layout_marginEnd="38dp"
-        android:visibility="invisible"/>
+        android:layout_marginStart="81dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="7dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="81dp" />
 
     <TextView
         android:id="@+id/textviewrepoter"
         android:layout_width="wrap_content"
+        android:textSize="20dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewID"
         android:text="TextView"
-        android:layout_alignBaseline="@+id/textViewid"
-        android:layout_alignBottom="@+id/textViewid"
-        android:layout_centerHorizontal="true" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textViewID"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewID"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewID"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/texthiddenID"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textviewrepoter"
+        android:layout_alignBottom="@+id/textviewrepoter"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="228dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp" />
 
     <TextView
         android:id="@+id/textViewresponser"
         android:layout_width="wrap_content"
+        android:textSize="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
         android:text="TextView"
-        android:layout_below="@+id/textViewid"
-        android:layout_alignLeft="@+id/textViewid"
-        android:layout_alignStart="@+id/textViewid" />
-
+        android:layout_below="@+id/textviewrepoter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textviewrepoter"
+        android:layout_marginTop="67dp"
+        app:layout_constraintTop_toBottomOf="@+id/textviewrepoter"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textviewrepoter"
+        app:layout_constraintHorizontal_bias="0.0" />
 
 
     <TextView
         android:id="@+id/textViewnote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewresponser"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignStart="@+id/textViewresponser"
-        android:layout_below="@+id/textViewresponser"
-        android:layout_marginTop="26dp"
-        android:text="TextView" />
+        android:layout_width="278dp"
+        android:layout_height="28dp"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/texthiddenID"
+        android:text="TextView"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="3dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textviewrepoter"
+        android:layout_marginTop="19dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView12"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/textViewresponser"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textViewdate"
         android:layout_width="wrap_content"
+        android:textSize="20dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textViewnote"
         android:layout_alignStart="@+id/textViewnote"
         android:layout_below="@+id/textViewnote"
-        android:layout_marginTop="29dp"
-        android:text="TextView" />
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textViewIncident"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:layout_alignBottom="@+id/textViewdate"
         android:layout_alignEnd="@+id/textviewrepoter"
         android:layout_alignRight="@+id/textviewrepoter"
-        android:text="TextView" />
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textViewresponser"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewresponser"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewresponser"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
         android:id="@+id/textViewTime"
@@ -88,5 +147,135 @@
         android:layout_alignBottom="@+id/textViewIncident"
         android:layout_alignEnd="@+id/textviewrepoter"
         android:layout_alignRight="@+id/textviewrepoter"
-        android:text="TextView" />
-</RelativeLayout>
+        android:text="TextView"
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="7dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="61dp"
+        android:text="Type :"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/textView12"
+        app:layout_constraintRight_toRightOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="21dp"
+        android:text="R_Person:"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView12"
+        app:layout_constraintRight_toRightOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="65dp"
+        android:layout_height="26dp"
+        android:text="Note :"
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/textView11"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:text="Reporter :"
+        android:textSize="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/textviewrepoter"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewnote"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="38dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="11dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="51dp"
+        android:layout_height="25dp"
+        android:text="Date :"
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintRight_toRightOf="@+id/textViewnote"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/textviewrepoter"
+        android:layout_marginLeft="71dp"
+        android:layout_marginRight="72dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Time :"
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textViewdate"
+        app:layout_constraintRight_toRightOf="@+id/textView8"
+        android:layout_marginTop="7dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="ID:"
+        android:textSize="20dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/textView11"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewID"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="16dp" />
+</android.support.constraint.ConstraintLayout>
