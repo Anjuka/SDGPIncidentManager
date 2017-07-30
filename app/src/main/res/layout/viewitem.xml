@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="51dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/texthiddenID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/textviewrepoter"
+        android:layout_alignBottom="@+id/textviewrepoter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textviewrepoter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/textViewid"
+        android:layout_alignBottom="@+id/textViewid"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewresponser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="TextView"
+        android:layout_below="@+id/textViewid"
+        android:layout_alignLeft="@+id/textViewid"
+        android:layout_alignStart="@+id/textViewid" />
+
+
+
+    <TextView
+        android:id="@+id/textViewnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewresponser"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/textViewresponser"
+        android:layout_below="@+id/textViewresponser"
+        android:layout_marginTop="26dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewnote"
+        android:layout_alignStart="@+id/textViewnote"
+        android:layout_below="@+id/textViewnote"
+        android:layout_marginTop="29dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewIncident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewdate"
+        android:layout_alignEnd="@+id/textviewrepoter"
+        android:layout_alignRight="@+id/textviewrepoter"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewIncident"
+        android:layout_alignEnd="@+id/textviewrepoter"
+        android:layout_alignRight="@+id/textviewrepoter"
+        android:text="TextView" />
+</RelativeLayout>

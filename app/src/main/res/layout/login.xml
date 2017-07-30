@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/risk_background"
+    android:layout_gravity="center"
+    tools:context="com.example.anjukakoralage.sdgpresit.LoginActivity">
+
+    <TextView
+        android:id="@+id/txtregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Registering"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ffff"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/lay_LinearLogin"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+
+        android:id="@+id/lay_LinearLogin"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        
+        <EditText
+            android:layout_margin="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your email address"
+            android:id="@+id/logEmail"
+            android:textColorHint="#ffff"
+            android:textColor="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:inputType="textPassword"
+            android:hint="Enter your password"
+            android:id="@+id/logPassword"
+            android:textColorHint="#ffff"
+            android:textColor="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <Button
+            android:layout_margin="15dp"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/logRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/inPase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you have account already! Please Login here... "
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/lay_LinearLogin"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "46820370515",
+    "firebase_url": "https://risk-manager-75637.firebaseio.com",
+    "project_id": "risk-manager-75637",
+    "storage_bucket": "risk-manager-75637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46820370515:android:5f97e3224c6b8c09",
+        "android_client_info": {
+          "package_name": "com.example.anjukakoralage.sdgpresit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46820370515-go9iujb1hdrfhekkea2nj6t6k77du4ra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anjukakoralage.sdgpresit",
+            "certificate_hash": "e6be9abef015d95acf98e23b2cfeca7f787ce490"
+          }
+        },
+        {
+          "client_id": "46820370515-87dfmefp3cl0u8docc368gv41rvbp9up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgf1K5JvYW3Q5_rWJtV9QEZRwj12VanrE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46820370515-87dfmefp3cl0u8docc368gv41rvbp9up.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
